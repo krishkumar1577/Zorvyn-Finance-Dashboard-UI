@@ -1,0 +1,512 @@
+{
+  "meta": {
+    "name": "Krish",
+    "role": "Financial Administrator",
+    "date": "2026-04-02",
+    "currency": "INR",
+    "timezone": "Asia/Kolkata"
+  },
+  "profile": {
+    "displayName": "Krish",
+    "fullName": "Krish Kumar",
+    "title": "System Administrator",
+    "organization": "Zorvyne UI",
+    "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuDtrQzTqCT4UlfjrPlJLfb3EXNbHNwEV7VKqvox3eQflu_7FmUBVB4JWH5L0PGzxFJw4ZMPQhwk30LEvJLCUlMywrJOczV8Hugyyb1jZqA1OFYILfEFbQpWZj1FXz5HE2oiYZwtJ-zcWFShz6mgPPal8R4l1xJvJ82Oapb0Ix9hN1c8rANGvL_r6PCK5lC4hCz3yYJRJ4Ik4YmN_lRnS3VTDoIpbrmN6TqEswf-gOKgX29Ctv4kGMD4h_p3lzvrQ-DFFuWOJuWLaO9y"
+  },
+  "summary": {
+    "totalBalance": 1245000,
+    "netSavings": 428500,
+    "riskIndex": "Low",
+    "monthlyInflow": 24905,
+    "monthlyOutflow": 8122.45,
+    "safeToSpend": 16782.55,
+    "projectedYearlyROI": 18.4,
+    "financialHealthScore": 94
+  },
+  "accounts": [
+    {
+      "id": "checking",
+      "name": "Primary Checking",
+      "type": "Checking",
+      "institution": "Northstar Bank",
+      "balance": 482950,
+      "available": 451220,
+      "currency": "INR",
+      "lastUpdated": "2026-04-02T08:12:00+05:30"
+    },
+    {
+      "id": "savings",
+      "name": "Growth Savings",
+      "type": "Savings",
+      "institution": "Northstar Bank",
+      "balance": 286300,
+      "available": 286300,
+      "currency": "INR",
+      "lastUpdated": "2026-04-02T08:12:00+05:30"
+    },
+    {
+      "id": "investments",
+      "name": "Investment Portfolio",
+      "type": "Brokerage",
+      "institution": "Zorvyne UI Wealth",
+      "balance": 476750,
+      "available": 102500,
+      "currency": "INR",
+      "lastUpdated": "2026-04-02T08:12:00-07:00"
+    }
+  ],
+  "budgets": [
+    {
+      "category": "Housing",
+      "budgeted": 3250,
+      "spent": 3250,
+      "currency": "INR",
+      "status": "on-track"
+    },
+    {
+      "category": "Utilities",
+      "budgeted": 420,
+      "spent": 387,
+      "currency": "INR",
+      "status": "healthy"
+    },
+    {
+      "category": "Groceries",
+      "budgeted": 860,
+      "spent": 732,
+      "currency": "INR",
+      "status": "healthy"
+    },
+    {
+      "category": "Entertainment",
+      "budgeted": 350,
+      "spent": 285,
+      "currency": "INR",
+      "status": "healthy"
+    },
+    {
+      "category": "Subscriptions",
+      "budgeted": 210,
+      "spent": 226,
+      "currency": "INR",
+      "status": "watch"
+    }
+  ],
+  "transactionHistory": [
+    {
+      "id": "tx-1001",
+      "date": "2026-04-01",
+      "postedAt": "2026-04-01T10:18:00-07:00",
+      "description": "Netflix Subscription",
+      "merchant": "Netflix",
+      "category": "Entertainment",
+      "type": "expense",
+      "amount": 15.99,
+      "currency": "INR",
+      "status": "Auto-pay",
+      "account": "Primary Checking"
+    },
+    {
+      "id": "tx-1002",
+      "date": "2026-04-01",
+      "postedAt": "2026-04-01T09:05:00-07:00",
+      "description": "Corporate Salary",
+      "merchant": "Zorvyn Finance",
+      "category": "Income",
+      "type": "income",
+      "amount": 3200,
+      "currency": "INR",
+      "status": "Verified",
+      "account": "Primary Checking"
+    },
+    {
+      "id": "tx-1003",
+      "date": "2026-03-29",
+      "postedAt": "2026-03-29T14:31:00-07:00",
+      "description": "Apple Store Soho",
+      "merchant": "Apple",
+      "category": "Tech",
+      "type": "expense",
+      "amount": 249,
+      "currency": "INR",
+      "status": "Pending",
+      "account": "Primary Checking"
+    },
+    {
+      "id": "tx-1004",
+      "date": "2026-03-28",
+      "postedAt": "2026-03-28T18:42:00-07:00",
+      "description": "Whole Foods Market",
+      "merchant": "Whole Foods",
+      "category": "Groceries",
+      "type": "expense",
+      "amount": 142.3,
+      "currency": "INR",
+      "status": "Cleared",
+      "account": "Primary Checking"
+    },
+    {
+      "id": "tx-1005",
+      "date": "2026-03-27",
+      "postedAt": "2026-03-27T11:16:00-07:00",
+      "description": "Stripe Payout - SaaS",
+      "merchant": "Stripe",
+      "category": "Income",
+      "type": "income",
+      "amount": 12450,
+      "currency": "INR",
+      "status": "Verified",
+      "account": "Growth Savings"
+    },
+    {
+      "id": "tx-1006",
+      "date": "2026-03-26",
+      "postedAt": "2026-03-26T20:05:00-07:00",
+      "description": "Luxury Lofts Management",
+      "merchant": "Luxury Lofts",
+      "category": "Housing",
+      "type": "expense",
+      "amount": 3200,
+      "currency": "INR",
+      "status": "Cleared",
+      "account": "Primary Checking"
+    },
+    {
+      "id": "tx-1007",
+      "date": "2026-03-25",
+      "postedAt": "2026-03-25T12:24:00-07:00",
+      "description": "Pacific Gas & Electric",
+      "merchant": "PG&E",
+      "category": "Utilities",
+      "type": "expense",
+      "amount": 112.9,
+      "currency": "INR",
+      "status": "Cleared",
+      "account": "Primary Checking"
+    },
+    {
+      "id": "tx-1008",
+      "date": "2026-03-24",
+      "postedAt": "2026-03-24T08:12:00-07:00",
+      "description": "Spotify Premium",
+      "merchant": "Spotify",
+      "category": "Subscriptions",
+      "type": "expense",
+      "amount": 11.99,
+      "currency": "INR",
+      "status": "Auto-pay",
+      "account": "Primary Checking"
+    }
+  ],
+  "insights": {
+    "primaryOutflow": {
+      "category": "Housing",
+      "monthlyAllocation": 3250,
+      "varianceVsLastMonth": 0,
+      "shareOfIncome": 38,
+      "notes": "Fixed housing costs remain the largest monthly expense."
+    },
+    "velocity": {
+      "lastMonth": 9650,
+      "thisMonth": 8420,
+      "changePercent": -12.4
+    },
+    "observations": [
+      {
+        "title": "Dining Habits",
+        "description": "You spent 15% less on dining out this month compared to your 6-month average.",
+        "sentiment": "positive"
+      },
+      {
+        "title": "Subscriptions",
+        "description": "Subscription costs are slightly higher than average due to a recurring annual renewal on Cloud Storage.",
+        "sentiment": "watch"
+      },
+      {
+        "title": "Utility Forecast",
+        "description": "Usage trends suggest an 8% decrease in electricity costs next month based on seasonal patterns.",
+        "sentiment": "positive"
+      }
+    ],
+    "categoryDistribution": [
+      {
+        "label": "Essential Services",
+        "percent": 62,
+        "color": "#131b2e"
+      },
+      {
+        "label": "Discretionary",
+        "percent": 24,
+        "color": "#7c839b"
+      },
+      {
+        "label": "Savings & Investments",
+        "percent": 14,
+        "color": "#10b981"
+      }
+    ],
+    "pageTitle": "Financial Insights",
+    "subtitle": "Your spending sanctuary, distilled into clarity.",
+    "modes": {
+      "personal": "Personal",
+      "business": "Business"
+    },
+    "callout": {
+      "title": "Optimize your cashflow",
+      "description": "Our AI predicts you could save an additional ₹3,750/month by consolidating your recurring streaming services.",
+      "buttonLabel": "Run Full Audit"
+    }
+  },
+  "reports": {
+    "financialHealthScore": 94,
+    "assets": 1240000,
+    "netSavings": 428500,
+    "riskIndex": "Low",
+    "projectedYearlyROI": 18.4,
+    "quarterChange": 12.5,
+    "monthlyArchives": [
+      {
+        "period": "September 2023",
+        "status": "Finalized",
+        "netCashflow": 14200,
+        "compliance": "Passed"
+      },
+      {
+        "period": "August 2023",
+        "status": "Finalized",
+        "netCashflow": -2150,
+        "compliance": "Passed"
+      },
+      {
+        "period": "July 2023",
+        "status": "Finalized",
+        "netCashflow": 28400.5,
+        "compliance": "Passed"
+      },
+      {
+        "period": "June 2023",
+        "status": "Archived",
+        "netCashflow": 8900,
+        "compliance": "Verified"
+      }
+    ],
+    "pageTitle": "Reports & Analytics",
+    "subtitle": "Quarterly Review",
+    "actions": {
+      "downloadJson": "Download JSON Report",
+      "exportCsv": "Export as CSV"
+    },
+    "sharedAccess": {
+      "statusLabel": "Observer Mode",
+      "title": "Shared Viewer Access",
+      "description": "This section is currently being viewed in 'Observer Mode'. Export and report generation tools are accessible to all workspace roles.",
+      "avatars": [
+        "https://placehold.co/40x40/png?text=K",
+        "https://placehold.co/40x40/png?text=L"
+      ],
+      "extraCount": 8,
+      "actionLabel": "Manage Access"
+    }
+  },
+  "roles": [
+    {
+      "name": "Financial Administrator",
+      "active": true
+    },
+    {
+      "name": "Viewer",
+      "active": false
+    }
+  ],
+  "ui": {
+    "search": {
+      "global": "Search transactions, insights, and reports...",
+      "insights": "Search insights...",
+      "reports": "Search reports...",
+      "transactions": "Search transactions, payees, or notes..."
+    },
+    "footer": {
+      "legalName": "Zorvyne UI",
+      "links": [
+        {
+          "label": "Privacy Policy",
+          "href": "#"
+        },
+        {
+          "label": "System Status",
+          "href": "#"
+        }
+      ]
+    }
+  },
+  "cards": [
+    {
+      "title": "Total Balance",
+      "amount": 12450.25,
+      "badge": "+2.4% vs LY",
+      "description": "Primary Checking Account",
+      "icon": "wallet"
+    },
+    {
+      "title": "Total Income",
+      "amount": 4200,
+      "badge": "Monthly High",
+      "description": "12% increase from last month",
+      "icon": "trending_up"
+    },
+    {
+      "title": "Total Expenses",
+      "amount": 1750,
+      "badge": "On Track",
+      "description": "Highest spend: Housing (40%)",
+      "icon": "shopping_cart"
+    }
+  ],
+  "navigation": {
+    "dashboard": "Dashboard",
+    "transactions": "Transactions",
+    "insights": "Insights",
+    "reports": "Reports",
+    "newTransaction": "New Transaction",
+    "settings": "Settings"
+  },
+  "landing": {
+    "eyebrow": "Explore 14 days free trials",
+    "headlineLines": ["Financial", "Tracking", "Platform"],
+    "description": "Elevate your wealth management with our transparent sanctuary. Track, analyze, and optimize your assets within a secure, high-tech vault environment.",
+    "primaryCta": "Try for free",
+    "demoCta": "See Demo",
+    "summaryTitle": "1 million +",
+    "summaryDescription": "Every month cash back for our clients",
+    "previewTitle": "Portfolio Analysis",
+    "previewAmount": 482950,
+    "previewDelta": "+12.4%",
+    "footerCards": [
+      {
+        "title": "Subscription",
+        "description": "Make your money analysis faster and create your own way of saving on payments. Consolidated view for all recurring costs.",
+        "icon": "link"
+      },
+      {
+        "title": "Mobile Application",
+        "description": "Real-time alerts, anytime. Experience the full power of VaultTrack on your iOS or Android device. Cloud-synced, encrypted, and offline-ready.",
+        "icon": "smartphone"
+      }
+    ],
+    "appButtons": {
+      "appStore": "App Store",
+      "googlePlay": "Google Play"
+    }
+  },
+  "dashboard": {
+    "welcomeLabel": "WELCOME BACK",
+    "title": "Portfolio Overview",
+    "periodLabel": "Last 6 Months",
+    "periodOptions": ["JAN", "FEB", "MAR", "APR", "MAY", "JUN"],
+    "balanceTrend": {
+      "title": "Balance Trend",
+      "subtitle": "Growth projection for current fiscal period",
+      "tooltipLabel": "April 2024",
+      "tooltipAmount": 10120,
+      "months": ["JAN", "FEB", "MAR", "APR", "MAY", "JUN"],
+      "points": [
+        { "label": "JAN", "date": "2026-01-31", "value": 9680 },
+        { "label": "FEB", "date": "2026-02-28", "value": 9815 },
+        { "label": "MAR", "date": "2026-03-31", "value": 10040 },
+        { "label": "APR", "date": "2026-04-30", "value": 10120 },
+        { "label": "MAY", "date": "2026-05-31", "value": 10440 },
+        { "label": "JUN", "date": "2026-06-30", "value": 10860 }
+      ]
+    },
+    "spendingBreakdown": {
+      "title": "Spending Breakdown",
+      "totalSpent": 1750,
+      "totalLabel": "Total Spent",
+      "categories": [
+        { "label": "Housing", "percent": "40%", "color": "#0b1c30", "amount": 700 },
+        { "label": "Food", "percent": "20%", "color": "#3980f4", "amount": 350 },
+        { "label": "Transport", "percent": "15%", "color": "#10b981", "amount": 262.5 },
+        { "label": "Entertainment", "percent": "10%", "color": "#f43f5e", "amount": 175 }
+      ],
+      "slices": [
+        { "label": "Housing", "percent": 40, "amount": 700, "color": "#0b1c30" },
+        { "label": "Food", "percent": 20, "amount": 350, "color": "#3980f4" },
+        { "label": "Transport", "percent": 15, "amount": 262.5, "color": "#10b981" },
+        { "label": "Entertainment", "percent": 10, "amount": 175, "color": "#f43f5e" },
+        { "label": "Other", "percent": 15, "amount": 262.5, "color": "#94a3b8" }
+      ]
+    },
+    "recentTransactions": [
+      {
+        "id": "tx-1001",
+        "name": "Netflix Subscription",
+        "categoryLabel": "Entertainment • 2 hours ago",
+        "amountLabel": "-₹1,299",
+        "status": "Auto-pay",
+        "icon": "subscriptions",
+        "displayType": "icon"
+      },
+      {
+        "id": "tx-1002",
+        "name": "Corporate Salary",
+        "categoryLabel": "Income • Yesterday",
+        "amountLabel": "+₹2,65,600",
+        "status": "Verified",
+        "icon": "payments",
+        "displayType": "icon"
+      },
+      {
+        "id": "tx-1003",
+        "name": "Apple Store Soho",
+        "categoryLabel": "Tech • April 12",
+        "amountLabel": "-₹20,675",
+        "status": "Pending",
+        "icon": "devices",
+        "displayType": "icon"
+      }
+    ]
+  },
+  "transactions": {
+    "pageTitle": "Transaction Center",
+    "subtitle": "Review and manage your sanctuary's fiscal movements.",
+    "searchPlaceholder": "Search transactions, payees, or notes...",
+    "modeLabel": "Admin Mode",
+    "categoryLabel": "Category",
+    "categoryOptions": [
+      "All Categories",
+      "Salary & Income",
+      "Groceries & Essentials",
+      "Rent & Utilities",
+      "Entertainment",
+      "Investments"
+    ],
+    "dateRangeLabel": "Last 30 Days",
+    "resetLabel": "Reset All Filters",
+    "historyLabel": "All History",
+    "exportLabel": "Export PDF",
+    "summaryCards": [
+      {
+        "title": "Monthly Inflow",
+        "amount": 24905,
+        "trendLabel": "vs last month",
+        "trendType": "up",
+        "trendPercent": 12
+      },
+      {
+        "title": "Monthly Outflow",
+        "amount": 8122.45,
+        "trendLabel": "vs last month",
+        "trendType": "down",
+        "trendPercent": 4
+      },
+      {
+        "title": "Safe-to-Spend",
+        "amount": 16782.55,
+        "trendLabel": "available now",
+        "trendType": "up",
+        "trendPercent": 68
+      }
+    ],
+    "floatingActionLabel": "Add Transaction"
+  }
+}

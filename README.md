@@ -1,99 +1,95 @@
-# React + TypeScript + Vite
+# Zorvyne UI Finance Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern finance dashboard for tracking income, expenses, and financial insights. Built with React and styled with Tailwind CSS.
 
-## Tailwind CSS
-
-Tailwind CSS v4 is already listed in `devDependencies` and present in the lockfile, but the app is not yet wired to Tailwind's newer Vite setup. At the moment, the project still uses custom CSS in `src/index.css` and `src/App.css`.
-
-If you want to follow the current Tailwind docs for Vite, add the Vite plugin and switch the global stylesheet entry to Tailwind's import-based setup:
+## Quick Start
 
 ```bash
-npm install -D @tailwindcss/vite
+npm install
+npm run dev
 ```
 
-```ts
-// vite.config.ts
-import tailwindcss from '@tailwindcss/vite'
+Then open **http://localhost:5173** in your browser.
 
-export default defineConfig({
-  plugins: [react(), tailwindcss()],
-})
+## What Can You Do?
+
+✅ **View Dashboard** - See your balance, income, and spending breakdown
+✅ **Manage Transactions** - Add, search, edit, and delete transactions
+✅ **Apply Filters** - Filter by date range, category, or search keywords
+✅ **Switch Roles** - Try "Viewer" or "Admin" mode (sidebar menu)
+✅ **View Reports** - Check financial scores and download reports
+✅ **Explore Insights** - See spending patterns and financial observations
+
+## Tech Stack
+
+- React 19 with TypeScript
+- Vite (fast build tool)
+- Tailwind CSS v4 (styling)
+
+## Project Structure
+
+```
+src/
+├── pages/              # Page views
+│   ├── DashboardPage   # Main overview
+│   ├── TransactionsPage # Transaction management
+│   ├── InsightsPage    # Financial insights
+│   ├── ReportsPage     # Reports & exports
+│   └── LandingPage     # Welcome page
+├── components/         # Reusable UI components
+├── types/              # TypeScript data types
+└── utils/              # Helper functions
+public/
+└── data.json          # Mock data (no backend)
 ```
 
-```css
-/* src/index.css */
-@import "tailwindcss";
+## Features
+
+### Dashboard
+- Balance over time chart
+- Spending by category
+- Quick summary cards
+
+### Transactions
+- View all transactions in a table
+- Search by description, merchant, category, or account
+- Filter by date range
+- Edit transaction details
+- Delete transactions (with confirmation)
+- Add new transactions (Admin only)
+
+### Insights
+- See where your money goes
+- Month-over-month spending comparison
+- Category breakdown with percentages
+
+### Reports
+- Financial health score
+- Key metrics (assets, savings, etc.)
+- Monthly archive history
+- Export data as JSON or CSV
+- Share snapshots via clipboard
+
+### Role-Based Access
+- **Admin**: Full access to all features
+- **Viewer**: Can view everything but cannot edit/delete/add
+
+## Build & Deploy
+
+```bash
+npm run build
 ```
 
-After that, you can start replacing custom CSS with Tailwind utilities where it makes sense.
+Outputs to `dist/` folder for production deployment.
 
-Currently, two official plugins are available:
+## Currency
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+All amounts are displayed in **Indian Rupees (₹)**
 
-## React Compiler
+## Notes
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- This is a frontend-only demo (no real backend)
+- All data is from `public/data.json`
+- Changes don't persist between sessions
+- Made for learning React patterns and UI design
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
